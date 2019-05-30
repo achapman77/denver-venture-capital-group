@@ -16,15 +16,15 @@ const imagemin = require('gulp-imagemin');
 
 function imgSquash() {
     return gulp
-        .src("./images/*")
+        .src("./images-raw/*")
         .pipe(imagemin()) 
-        .pipe(gulp.dest("./minified/images"));
+        .pipe(gulp.dest("./images"));
 }
 
 gulp.task("imgSquash", imgSquash);
 
 gulp.task("watch", () => { 
-    gulp.watch("./images/*", imgSquash);
+    gulp.watch("./images-raw/*", imgSquash);
 });
 
 gulp.task("default",gulp.series("imgSquash","watch"));
