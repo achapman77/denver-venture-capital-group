@@ -16,7 +16,7 @@ const imagemin = require('gulp-imagemin');
 
 function imgSquash() {
     return gulp
-        .src("./images-raw/*")
+        .src("./images-raw/**/*")
         .pipe(imagemin()) 
         .pipe(gulp.dest("./images"));
 }
@@ -24,7 +24,7 @@ function imgSquash() {
 gulp.task("imgSquash", imgSquash);
 
 gulp.task("watch", () => { 
-    gulp.watch("./images-raw/*", imgSquash);
+    gulp.watch("./images-raw/**/*", imgSquash);
 });
 
 gulp.task("default",gulp.series("imgSquash","watch"));
