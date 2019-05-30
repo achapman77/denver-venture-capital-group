@@ -1,0 +1,24 @@
+{
+  "name": "denver-venture-capital-group",
+  "version": "1.0.0",
+  "description": "Denver Venture Capital Group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achapman77/denver-venture-capital-group.git"
+  },
+  "author": "Adam Chapman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achapman77/denver-venture-capital-group/issues"
+  },
+  "homepage": "https://github.com/achapman77/denver-venture-capital-group#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2"
+  }
+}
